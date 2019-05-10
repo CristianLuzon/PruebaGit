@@ -25,7 +25,7 @@ public class Main
     {
         try
         {
-            //Driver
+            //Cargar Driver
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Driver cargado correctamente.");
 
@@ -52,7 +52,7 @@ public class Main
                 
             }
             
-            System.out.print("");
+            System.out.print("\n");
             
             //Ejecutar y almacenar resultado de la consulta productos
             ResultSet resulProductos = sentencia.executeQuery("select * from productos");
